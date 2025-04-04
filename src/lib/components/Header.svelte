@@ -131,15 +131,26 @@
 	}
 
 	@include media(tablet) {
-		.header {
-			position: fixed;
-			top: 60px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 100%;
-			background-color: transparent;
-			z-index: 1000;
-		}
+		//.header {
+		//	position: fixed;
+		//	top: 60px;
+		//	left: 50%;
+		//	transform: translateX(-50%);
+		//	width: 100%;
+		//	background-color: transparent;
+		//	z-index: 1000;
+		//}
+
+    .header {
+      position: sticky;
+      top: 0;
+      margin: 60px auto -132px;
+      width: 100%;
+      background-color: transparent;
+      z-index: 1000;
+      padding: 0;
+
+    }
 
 		.nav {
 			display: flex;
