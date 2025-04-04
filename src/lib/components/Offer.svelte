@@ -12,7 +12,7 @@
 </script>
 
 <section id="offer" class="offer-section">
-	<h1 class="offer-title text-monserrat">{content.offer.title}</h1>
+	<h1 class="section-title text-monserrat">{content.offer.title}</h1>
 	<Divider />
 	<article class="offer-container">
 		<ul class="offer-list">
@@ -36,7 +36,7 @@
 			<div bind:this={desktopContent} class="offer-content desktop-content"
 					 in:fly={{ duration: 700, x: 100 }}
 					 out:fly={{ duration: 700, x: 100 }}>
-				<p>{content.offer.items[activeIndex]?.description}</p>
+				<p class="text-monserrat">{content.offer.items[activeIndex]?.description}</p>
 			</div>
 		{/if}
 	</article>
@@ -51,13 +51,6 @@
     align-items: center;
     text-align: center;
     padding-top: 40px;
-  }
-
-  .offer-title {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-text);
-    text-transform: uppercase;
   }
 
   .offer-container {
