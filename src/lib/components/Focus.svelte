@@ -42,7 +42,7 @@
 <style lang="scss">
 	@use '$lib/styles/_mixins' as *;
 
-	/* Mobile First Styles */
+
 	.focus-section {
 		position: relative;
 		padding-bottom: 120px;
@@ -239,7 +239,7 @@
 
 	@include media(tablet) {
 		.focus-section {
-			padding-bottom: 150px;
+			padding-bottom: 0;
 		}
 
 		.focus-container {
